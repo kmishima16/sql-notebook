@@ -8,4 +8,3 @@ ENV LANG ja_JP.utf8
 
 USER postgres
 
-HEALTHCHECK --interval=5s --retries=20 CMD ["pg_isready"]

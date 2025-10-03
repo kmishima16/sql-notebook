@@ -34,9 +34,6 @@ services:
       - PG_PASSWORD=padawan12345
       - PG_DATABASE=dsdojo_db
       - JUPYTER_ENABLE_LAB=yes
-    depends_on:
-      db:
-        condition: service_healthy
     volumes:
       - type: bind
         source: ./
